@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* body {
+    position: relative;
+} */
+
 header {
     background-image: url(banner3.jpg);
     background-repeat: no-repeat;
@@ -13,17 +17,480 @@ header {
     padding: 10%;
 }
 
+
 header h2 {
-    color: white;
     text-align: center;
+    color: white;
+    font-size: 1.3rem;
+    
+}
+@media(min-width: 768px){
+    header h2 {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+        
+    }
 }
 
+@media(min-width: 1280px){
+    header h2 {
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        
+    }
+}
 header button {
     display: block;
     margin: 0 auto;
-    background-color: blue;
+    padding: 2% 0;
+    margin: 10% auto 0% auto;
+    width: 100px;
+    font-size: 1rem;
     border: 0px;
-    border-radius: 5%;
-    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(115, 169, 250);
+    color: white;
+}
 
+header button:hover {
+    background-color: rgb(96, 139, 204);
+}
+
+@media(min-width: 768px){
+    header button {
+        display: block;
+        margin: 0 auto;
+        padding: 2% 0;
+        margin: 10% auto 0% auto;
+        width: 140px;
+        font-size: 1rem;
+        border: 0px;
+        border-radius: 30px;
+        background-color: rgb(115, 169, 250);
+        color: white;
+    }
+}
+
+@media(min-width: 1280px){
+    header button {
+        display: block;
+        margin: 0 auto;
+        padding: 1% 0;
+        margin: 10% auto 0% auto;
+        width: 140px;
+        font-size: 1rem;
+        border: 0px;
+        border-radius: 30px;
+        background-color: rgb(115, 169, 250);
+        color: white;
+    }
+}
+
+nav {
+    text-align: center;
+    margin: 5%;
+}
+
+.logoBuild {
+    border-right: 0;
+    border-style:solid;
+    border-width: 4px 0 4px 4px;
+    border-color: grey;
+    color:rgb(255, 153, 0);
+    padding-left: 7px;
+}
+
+h1 {
+    color: grey;
+    margin: 5% 0;
+}
+
+nav ul li {
+    background-color: rgb(115, 169, 250);
+    padding: 2%;
+    list-style: none;
+}
+
+nav div a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(96, 139, 204)
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+
+@media(min-width: 768px){
+    nav {
+        top:2%;
+        left: 2%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 97%;
+        display: inline-block;
+    }
+
+    nav .logo {
+        float: left;
+    }
+
+    nav ul {
+        position: relative;
+        width: 340px;
+        float: right;
+    }
+
+    nav ul li {
+        float: left;
+        background-color: transparent;
+    }
+
+    nav ul li:hover {
+        background-color: transparent;
+        color: grey;
+    }
+    nav ul li a:hover {
+        background-color: transparent;
+        color: rgb(197, 197, 197);
+    }
+
+    .logoBuild {
+        border-color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        margin-top: 5%;
+    }
+}
+
+.separator {
+    position: relative;
+    top: -1rem;
+    height: 3px;
+    background-color: black;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 2px;
+    display: block;
+}
+
+@media(min-width: 768px){
+    .separator {
+    top: -1.7rem;
+    }
+}
+
+@media(min-width: 1280px){
+    .separator {
+    top: -2.2rem;
+    }
+}
+
+h3 {
+    color: rgb(115, 169, 250);
+}
+
+main {
+    width: 100%;
+    padding: 0 10%;
+    line-height: 30px;
+    margin-bottom: 4%;
+}
+
+main section div {
+    width: 100%;
+}
+
+main section div * {
+    margin-bottom: 5%;
+}
+
+main section div ul li {
+    list-style-image: url(arrow_bullet.png);
+    list-style-position: inside;
+    margin-bottom: 2%;
+}
+
+.about img {
+    width: 100%;
+    margin: 5% 0;
+}
+
+@media(min-width: 768px){
+    main .about div:nth-child(3) {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .about img {
+        float: right;
+        width: 45%;
+        margin: 5% 0;
+    }
+
+    main .about div:nth-child(5) {
+        clear: both;
+    }
+
+}
+
+@media(min-width: 1280px){
+    main .about {
+        display: inline-block;
+    }
+    main .about div:nth-child(3) {
+        float: left;                
+        width: 30%;
+    }
+    .about img {
+        width: 30%;
+        float: left;                
+        
+        margin: 0 0 0 5% ;
+    }
+    main .about div:nth-child(5) {
+        clear: right;
+        width: 30%;        
+        float: right;
+    }
+}
+
+.people div {
+    background-color: rgb(115, 169, 250);
+    padding: 5%;
+    margin: 5%;
+}
+
+.people div img {
+    border-radius: 50%;
+    border: 3px solid white;
+    float:left;
+    padding: 1%;
+    width: 80px;
+    margin: 10px;
+}
+
+.people div span {
+    display: block;
+    padding-top: 5%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.people div p {
+    color: white;
+    clear: both;
+}
+
+.fa-star, .fa-star-half {
+    color: white;
+}
+
+@media(min-width: 768px){
+    .people div {
+        display: inline-block;
+        margin: 1%;
+        padding: 2%;
+        width: 48%;
+    }
+
+    .people div:nth-child(even) {
+        float: right;
+    }
+}
+
+@media(min-width: 1280px){
+    .people div {
+        margin: 0.5%;
+        padding: 2%;
+        width: 32%;
+    }
+
+    .people div:nth-child(3) {
+        float: left;
+    }
+
+    .people div:nth-child(4) {
+        float: left;
+        margin-left: 1%;
+    }
+
+    .people div:nth-child(5) {
+        float: right;
+    }
+}
+
+.contact div {
+    text-align: center;
+    color: white;
+    padding: 5%;
+}
+
+.contact div p {
+    font-size: 20px;
+}
+
+.contact div p i {
+    margin: 2%;
+}
+
+.socialIcons i:hover {
+    color: grey;
+}
+
+.contact div:nth-child(3) {
+    background-color: rgb(46, 194, 102);
+}
+
+.contact div:nth-child(4) {
+    background-color: rgb(230, 90, 80);
+}
+
+.contact div:nth-child(5) {
+    background-color: rgb(52, 93, 155);
+}
+
+.contact div:nth-child(6) {
+    background-color: rgb(75, 213, 231);
+    padding:0px;
+
+}
+
+.contact div:nth-child(7) {
+    padding:0px;
+}
+
+@media(min-width: 768px){
+    .contact div {
+        display: inline-block;
+        width: 50%;
+        height: 250px;
+    }
+
+    .contact div:nth-child(7) {
+        padding:0px;
+        height: 500px;
+        width: 100%;
+    }
+
+    .contact div:nth-child(even) {
+        float: right;
+    }
+
+    .contact div p i {
+        margin: 4%;
+        font-size: 24px
+    }
+}
+
+@media(min-width: 1280px){
+    .contact{
+        margin-top: 30%;
+    }
+
+    .contact div {
+        width: 25%;
+        float: left;
+    }
+
+    .contact div:nth-child(even) {
+        float: left;
+    }
+
+}
+
+.form {
+    margin-top: 51%;
+    padding: 5%;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 4% 0;
+
+}
+
+.form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.form * {
+    display: block;
+}
+
+@media(min-width: 768px){
+    .form input {
+        width: 31%;
+        padding: 10px;
+        margin: 2% 0;
+        display: inline-block;
+    }
+
+    .form input:nth-child(5) {
+        float: right;
+    }
+
+    .form input:nth-child(4) {
+        margin: 2% 3%;
+    }
+
+}
+
+.form button {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 1%;
+    border: 0;
+    margin-top: 4%;
+    width: 20%;
+}
+
+@media(min-width: 1280px){
+    .form button {
+        width: 10%;
+    }
+}
+
+footer {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5% 1%;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: grey;
 }
